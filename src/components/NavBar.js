@@ -1,10 +1,10 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 
 export default function NavBar() {
 	return (
-		<header className="bg-red-600">
+		<header className="bg-blue-200 border-b-2 border-gray-100">
 			<div className="container mx-auto flex justify-between">
 				<nav className="flex">
 					<NavLink
@@ -48,5 +48,5 @@ export default function NavBar() {
 				</div>
 			</div>
 		</header>
-	)
+	);
 }

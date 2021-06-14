@@ -1,5 +1,5 @@
-import React from 'react'
-import image from '../el-cap.jpeg'
+import React from 'react';
+import image from '../el-cap.jpeg';
 
 export default function Home() {
 	return (
@@ -15,5 +15,5 @@ export default function Home() {
 				</h1>
 			</section>
 		</main>
-	)
+	);
 }

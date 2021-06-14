@@ -30,8 +30,8 @@ export default function Post() {
 				<h1 className="text-5xl flex justify-center cursive">
 					Blog Posts Page
 				</h1>
-				<h2 className="text-lg text-gray-600 flex justify-center mb-12">
-					Welcome to my blog.
+				<h2 className="text-lg text-gray-600 flex justify-center mt-2 mb-12">
+					Welcome to my blog. There's somethin' about a dingo man.
 				</h2>
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{postData &&
