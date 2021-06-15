@@ -22,12 +22,12 @@ export default function Project() {
 	});
 
 	return (
-		<main className="bg-green-100 min-g-screen p-12">
-			<section className="container mx-auto">
-				<h1 className="text-5xl flex justify-center cursive">
-					My Projects
+		<main>
+			<section className="container mx-auto p-12">
+				<h1 className="text-6xl flex justify-center font-extralight text-white">
+					PROJECTS
 				</h1>
-				<h2 className="text-lg text-gray-600 flex justify-center mb-12">
+				<h2 className="text-lg text-gray-200 flex justify-center mt-2 mb-12">
 					Welcome to my projects page!
 				</h2>
 				<section className="grid grid-cols-2 gap-8">

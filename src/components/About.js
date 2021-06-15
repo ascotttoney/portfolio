@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
-import image from '../vinyl-1.jpeg';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
@@ -29,10 +28,9 @@ export default function About() {
 	if (!author) return <div>Loading...</div>;
 
 	return (
-		<main className="relative">
-			<img src={image} alt="vinyl records" className="absolute w-full" />
+		<main className="min-h-screen bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
 			<div className="p-10 lg:pt-48 container mx-auto relative">
-				<section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+				<section className="bg-green-100 bg-opacity-50 rounded-lg shadow-2xl lg:flex p-20">
 					<img
 						src={urlFor(author.authorImage).url()}
 						className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
