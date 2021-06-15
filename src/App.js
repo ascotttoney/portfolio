@@ -10,7 +10,7 @@ import Resume from './components/Resume';
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="min-h-screen bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+			<div className="w-full h-full bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
 				<NavBar />
 				<Switch>
 					<Route component={Home} path="/" exact />

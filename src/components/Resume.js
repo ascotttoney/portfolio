@@ -1,36 +1,46 @@
 import React from 'react';
+import profilePicture from '../assets/toney-family.jpeg';
+import mailIcon from '../assets/mail-outline.svg';
+import phoneIcon from '../assets/call-outline.svg';
+import houseIcon from '../assets/home-outline.svg';
+import eggIcon from '../assets/egg-outline.svg';
+import twoPersonIcon from '../assets/people-outline.svg';
+import gitHubLogo from '../assets/logo-github.svg';
+import linkedInLogo from '../assets/logo-linkedin.svg';
+import instagramLogo from '../assets/logo-instagram.svg';
+import globeIcon from '../assets/globe-outline.svg';
 
 export default function Resume() {
 	return (
-		<body class="font-sans antialiased w-full">
-			<div class="container mx-auto max-w-screen-xl">
+		<body className="font-sans antialiased w-full">
+			<div className="container mx-auto max-w-screen-xl">
 				<main
 					id="wrapper"
-					class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl"
+					className="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl"
 				>
 					<div
 						id="sidebar"
-						class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
+						className="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
 					>
 						<div class="px-2 mb-12">
 							<img
-								src="./assets/jack-finnigan-rriAI0nhcbc-unsplash.jpg"
-								alt="Profile Picture"
-								class="rounded-full w-48 mx-auto mb-2"
+								src={profilePicture}
+								alt="The Toney Family"
+								class="rounded-md w-48 mx-auto mb-2"
 							/>
-							<h1 class="text-center text-3xl font-semibold mb-2">
-								Scott Toney
+							<h1 class="text-center text-3xl tracking-wide ">
+								SCOTT TONEY
 							</h1>
-							<h2 class="text-center text-xl font-light">
+							<h2 className="text-center text-lg tracking-wide font-extralight ">
 								Junior Fullstack Developer
 							</h2>
 						</div>
 
 						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">Contact</h2>
+							<h2 class="text-xl font-semibold mb-4">.contact</h2>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/mail-outline.svg"
+									src={mailIcon}
 									class="inline w-6 mr-4"
 									alt="Mail icon"
 								/>
@@ -38,7 +48,7 @@ export default function Resume() {
 							</div>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/call-outline.svg"
+									src={phoneIcon}
 									class="inline w-6 mr-4"
 									alt="Phone icon"
 								/>
@@ -46,30 +56,31 @@ export default function Resume() {
 							</div>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/home-outline.svg"
+									src={houseIcon}
 									class="inline w-6 pb-1 mr-4"
 									alt="House icon"
 								/>
 								<div>
-									<p>897 Beecher Street SW</p>
-									<p>Atlanta</p>
+									<p>Atlanta, Georgia</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">Personal</h2>
+							<h2 class="text-xl font-semibold mb-4">
+								.personal
+							</h2>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/egg-outline.svg"
+									src={eggIcon}
 									class="inline w-6 mr-4"
 									alt="Egg Icon"
 								/>
-								<span>Born on 10th of October 1984</span>
+								<span>10.10.1984</span>
 							</div>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/people-outline.svg"
+									src={twoPersonIcon}
 									class="inline w-6 mr-4"
 									alt="Two Persons Icon"
 								/>
@@ -79,16 +90,16 @@ export default function Resume() {
 
 						<div class="font-light text-lg px-2 mb-12">
 							<h2 class="text-xl font-semibold mb-4">
-								On the Web
+								.on the web
 							</h2>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/logo-github.svg"
+									src={gitHubLogo}
 									class="inline w-6 mr-4"
 									alt="GitHub Logo"
 								/>
 								<a
-									href="#"
+									href="http://github.com/ascotttoney"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -97,26 +108,12 @@ export default function Resume() {
 							</div>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/logo-stackoverflow.svg"
-									class="inline w-6 mr-4"
-									alt="Stack Overflow Logo"
-								/>
-								<a
-									href="http://github.com/ascotttoney"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									StackOverflow
-								</a>
-							</div>
-							<div class="flex items-center my-3">
-								<img
-									src="./assets/logo-linkedin.svg"
+									src={linkedInLogo}
 									class="inline w-6 mr-4"
 									alt="LinkedIn Logo"
 								/>
 								<a
-									href="#"
+									href="http://www.linkedin.com/ascotttoney"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -125,12 +122,12 @@ export default function Resume() {
 							</div>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/logo-twitter.svg"
+									src={instagramLogo}
 									class="inline w-6 mr-4"
-									alt="Twitter Logo"
+									alt="Instagram Logo"
 								/>
 								<a
-									href="#"
+									href="http://www.instagram.com/batcat84"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -139,26 +136,12 @@ export default function Resume() {
 							</div>
 							<div class="flex items-center my-3">
 								<img
-									src="./assets/logo-codepen.svg"
-									class="inline w-6 mr-4"
-									alt="CodePen Logo"
-								/>
-								<a
-									href="#"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									CodePen
-								</a>
-							</div>
-							<div class="flex items-center my-3">
-								<img
-									src="./assets/globe-outline.svg"
+									src={globeIcon}
 									class="inline w-6 mr-4"
 									alt="Globe icon"
 								/>
 								<a
-									href="#"
+									href="https://scotttoney.netlify.app"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -169,7 +152,7 @@ export default function Resume() {
 
 						<div class="font-light text-lg px-2 mb-12">
 							<h2 class="text-xl font-semibold mb-4">
-								Skills and Tools
+								.skills and tools
 							</h2>
 							<ul class="list-none">
 								<li>
@@ -185,7 +168,7 @@ export default function Resume() {
 									<progress
 										id="vue-skill"
 										max="100"
-										value="80"
+										value="60"
 									></progress>
 								</li>
 								<li>
@@ -193,100 +176,57 @@ export default function Resume() {
 									<progress
 										id="react-skill"
 										max="100"
-										value="66"
+										value="70"
 									></progress>
 								</li>
 								<li>
-									<label for="nextjs-skill">Nest.js</label>
-									<progress
-										id="nextjs-skill"
-										max="100"
-										value="72"
-									></progress>
-								</li>
-								<li>
-									<label for="eleventy-skill">Eleventy</label>
-									<progress
-										id="eleventy-skill"
-										max="100"
-										value="66"
-									></progress>
-								</li>
-								<li>
-									<label for="node-skill">
-										Node / Express.js
-									</label>
-									<progress
-										id="node-skill"
-										max="100"
-										value="45"
-									></progress>
-								</li>
-								<li>
-									<label for="css-skill">SCSS</label>
+									<label for="css-skill">CSS</label>
 									<progress
 										id="css-skill"
 										max="100"
-										value="75"
+										value="60"
 									></progress>
 								</li>
 								<li>
-									<label for="design-skill">
-										Inkscape / Figma
-									</label>
+									<label for="css-skill">Ruby on Rails</label>
 									<progress
-										id="design-skill"
+										id="css-skill"
 										max="100"
-										value="62"
+										value="50"
 									></progress>
 								</li>
 								<li>
-									<div>Infrastructure / Hosting / DB</div>
-									<p class="leading-8">
-										<span class="rounded-xl bg-gray-300 px-3">
-											AWS
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Vercel
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Heroku
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											DynamoDB
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											MongoDB
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											SQLite
-										</span>
-									</p>
+									<label for="css-skill">CI/CD</label>
+									<progress
+										id="css-skill"
+										max="100"
+										value="50"
+									></progress>
+								</li>
+								<li>
+									<label for="css-skill">SQL</label>
+									<progress
+										id="css-skill"
+										max="100"
+										value="40"
+									></progress>
 								</li>
 							</ul>
 						</div>
 
 						<div class="font-light text-lg px-2 mb-12">
 							<h2 class="text-xl font-semibold mb-4">
-								Education
+								.education
 							</h2>
-							<h3 class="font-semibold">BSc Computer Science</h3>
-							<p>20016 - 2019 University of London</p>
-						</div>
-
-						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">
-								Languages
-							</h2>
-							<h3 class="font-semibold">German</h3>
-							<p>Native</p>
-							<h3 class="font-semibold">English</h3>
-							<p>Fluent</p>
+							<h3 class="font-semibold">
+								Fullstack Web Development
+							</h3>
+							<p>Flatiron School, Atlanta 2019</p>
 						</div>
 					</div>
+
 					<div class="content w-full p-12">
 						<div id="profile" class="prose">
-							<h2 class="section-headline">Profile</h2>
 							<p>
 								I'm a self-taught web developer focusing on the
 								core web fundamentals - HTML, CSS and JS. I'm
@@ -306,13 +246,13 @@ export default function Resume() {
 						<div id="experience" class="prose">
 							<h2 class="section-headline">Experience</h2>
 							<div>
-								<h3>Example Inc</h3>
+								<h3>Truist Bank (formerly SunTrust Bank)</h3>
 								<section class="mb-6">
 									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Jul.&nbsp;2019:
+										Aug '19 - present:
 									</div>
 									<div class="lg:inline-block lg:w-8/12 w-full">
-										Fullstack Developer
+										Junior Application Developer
 									</div>
 								</section>
 								<section class="mb-6">
@@ -320,53 +260,14 @@ export default function Resume() {
 										Task:
 									</div>
 									<div class="lg:inline-block lg:w-8/12 w-full">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris
-										nisi ut aliquip ex ea commodo consequat.
-									</div>
-								</section>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Description:
-									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										Duis aute irure dolor in reprehenderit
-										in voluptate velit esse cillum dolore eu
-										fugiat nulla pariatur. Excepteur sint
-										occaecat cupidatat non proident, sunt in
-										culpa qui officia deserunt mollit anim
-										id est laborum.
-									</div>
-								</section>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Tools:
-									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										<span class="rounded-xl bg-gray-300 px-3">
-											Vue
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Vuex
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Bootstrap
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Docker
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Git
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Bitbucket
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Jira
-										</span>
+										Assisted with testing and integration
+										during BBT/SunTrust merger. Built simple
+										Azure CI/CD pipelines and releases.
+										Designed UI for an internal mobile
+										application used by wealth advisors.
+										Unit tested Node and React-Native
+										applications. Dabbled in Java, Docker,
+										.NET, and Splunk.
 									</div>
 								</section>
 							</div>
