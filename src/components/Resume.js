@@ -12,8 +12,8 @@ import globeIcon from '../assets/globe-outline.svg';
 
 export default function Resume() {
 	return (
-		<body className="font-sans antialiased w-full">
-			<div className="container mx-auto max-w-screen-xl">
+		<main>
+			<div className="p-6 container mx-auto relative">
 				<main
 					id="wrapper"
 					className="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl"
@@ -22,13 +22,13 @@ export default function Resume() {
 						id="sidebar"
 						className="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
 					>
-						<div class="px-2 mb-12">
+						<div className="px-2 mb-12">
 							<img
 								src={profilePicture}
 								alt="The Toney Family"
-								class="rounded-md w-48 mx-auto mb-2"
+								className="rounded-md w-48 mx-auto mb-2"
 							/>
-							<h1 class="text-center text-3xl tracking-wide ">
+							<h1 className="text-center text-3xl tracking-wide ">
 								SCOTT TONEY
 							</h1>
 							<h2 className="text-center text-lg tracking-wide font-extralight ">
@@ -36,28 +36,30 @@ export default function Resume() {
 							</h2>
 						</div>
 
-						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">.contact</h2>
-							<div class="flex items-center my-3">
+						<div className="font-light text-lg px-2 mb-12">
+							<h2 className="text-xl font-semibold mb-4">
+								.contact
+							</h2>
+							<div className="flex items-center my-3">
 								<img
 									src={mailIcon}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="Mail icon"
 								/>
 								<a href="mailto:">ascotttoney@gmail.com</a>
 							</div>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={phoneIcon}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="Phone icon"
 								/>
 								<a href="tel:">404.723.6952</a>
 							</div>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={houseIcon}
-									class="inline w-6 pb-1 mr-4"
+									className="inline w-6 pb-1 mr-4"
 									alt="House icon"
 								/>
 								<div>
@@ -66,36 +68,36 @@ export default function Resume() {
 							</div>
 						</div>
 
-						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">
+						<div className="font-light text-lg px-2 mb-12">
+							<h2 className="text-xl font-semibold mb-4">
 								.personal
 							</h2>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={eggIcon}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="Egg Icon"
 								/>
 								<span>10.10.1984</span>
 							</div>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={twoPersonIcon}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="Two Persons Icon"
 								/>
 								<span>Married, three pets</span>
 							</div>
 						</div>
 
-						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">
+						<div className="font-light text-lg px-2 mb-12">
+							<h2 className="text-xl font-semibold mb-4">
 								.on the web
 							</h2>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={gitHubLogo}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="GitHub Logo"
 								/>
 								<a
@@ -106,10 +108,10 @@ export default function Resume() {
 									GitHub
 								</a>
 							</div>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={linkedInLogo}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="LinkedIn Logo"
 								/>
 								<a
@@ -120,10 +122,10 @@ export default function Resume() {
 									LinkedIn
 								</a>
 							</div>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={instagramLogo}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="Instagram Logo"
 								/>
 								<a
@@ -134,10 +136,10 @@ export default function Resume() {
 									@batcat84
 								</a>
 							</div>
-							<div class="flex items-center my-3">
+							<div className="flex items-center my-3">
 								<img
 									src={globeIcon}
-									class="inline w-6 mr-4"
+									className="inline w-6 mr-4"
 									alt="Globe icon"
 								/>
 								<a
@@ -150,11 +152,11 @@ export default function Resume() {
 							</div>
 						</div>
 
-						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">
+						<div className="font-light text-lg px-2 mb-12">
+							<h2 className="text-xl font-semibold mb-4">
 								.skills and tools
 							</h2>
-							<ul class="list-none">
+							<ul className="list-none">
 								<li>
 									<label for="js-skill">JavaScript</label>
 									<progress
@@ -213,53 +215,45 @@ export default function Resume() {
 								</li>
 							</ul>
 						</div>
-
-						<div class="font-light text-lg px-2 mb-12">
-							<h2 class="text-xl font-semibold mb-4">
-								.education
-							</h2>
-							<h3 class="font-semibold">
-								Fullstack Web Development
-							</h3>
-							<p>Flatiron School, Atlanta 2019</p>
-						</div>
 					</div>
 
-					<div class="content w-full p-12">
-						<div id="profile" class="prose">
+					<div className="content w-full p-8">
+						<div id="profile" className="prose">
 							<p>
-								I'm a self-taught web developer focusing on the
-								core web fundamentals - HTML, CSS and JS. I'm
-								experienced in frontend frameworks like Vue and
-								React and static site generators like Next.js
-								and Eleventy. I write SCSS or use CSS frameworks
+								I'm a bootcamp graduate focusing on the core web
+								fundamentals - HTML, CSS and JS. I'm experienced
+								in frontend frameworks like Vue and React and
+								static site generators like Next.js and
+								Eleventy. I write SCSS or use CSS frameworks
 								like TailwindCSS, Bootstrap or Bulma to speed up
 								styling of my projects.
 							</p>
 							<p>
-								I am highly motivated in expanding my horizons
-								day by day for better performance, testing and
-								user experience.
+								I am motivated to expand my horizons, day by
+								day, project by project, for better performance,
+								testing and user experience.
 							</p>
 						</div>
-						<hr class="mt-8 mb-12" />
-						<div id="experience" class="prose">
-							<h2 class="section-headline">Experience</h2>
+						<hr className="mt-8 mb-12" />
+						<div id="experience" className="prose">
+							<h2 className="font-bold text-2xl text-green-400 pb-4">
+								.experience
+							</h2>
 							<div>
 								<h3>Truist Bank (formerly SunTrust Bank)</h3>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+								<section className="mb-6">
+									<div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
 										Aug '19 - present:
 									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
+									<div className="lg:inline-block lg:w-8/12 w-full">
 										Junior Application Developer
 									</div>
 								</section>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+								<section className="mb-6">
+									<div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
 										Task:
 									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
+									<div className="lg:inline-block lg:w-8/12 w-full">
 										Assisted with testing and integration
 										during BBT/SunTrust merger. Built simple
 										Azure CI/CD pipelines and releases.
@@ -272,132 +266,42 @@ export default function Resume() {
 								</section>
 							</div>
 						</div>
-						<hr class="mt-8 mb-12" />
-						<div id="projects" class="prose">
-							<h2 class="section-headline">Projects</h2>
-							<div class="mb-16">
-								<h3 id="chrisko-headline">Chrisko.io</h3>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Personal blog:
+						<hr className="mt-8 mb-12" />
+						<div id="experience" className="prose">
+							<h2 className="font-bold text-2xl text-green-400 pb-4">
+								.education
+							</h2>
+							<div>
+								<h3>Flatiron School</h3>
+								<section className="mb-6">
+									<div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+										Apr '19 - Aug '19:
 									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										My blog is the center of my online
-										presence. Here, I share posts about what
-										I've learnt, tutorials and my thoughts
-										on web development in general.
-									</div>
-								</section>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Deployed to:
-									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										<a
-											href="https://chrisko.io"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											chrisko.io
-										</a>
+									<div className="lg:inline-block lg:w-8/12 w-full">
+										Fullstack Web Development
 									</div>
 								</section>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Code on:
+								<section className="mb-6">
+									<div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+										Task:
 									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										<a
-											href="https://github.com/christiankozalla/nextjs-blog"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											GitHub/nextjs-blog
-										</a>
-									</div>
-								</section>
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Features:
-									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										<ul>
-											<li>Static generation</li>
-											<li>
-												Blog content written in Markdown
-											</li>
-											<li>
-												Counter for pageviews and likes
-											</li>
-											<li>My latest tweets</li>
-											<li>
-												Featured images made with
-												Inkscape
-											</li>
-											<li>SEO</li>
-										</ul>
+									<div className="lg:inline-block lg:w-8/12 w-full">
+										Rigorous 15-week immersive course that
+										focused on learning and creating
+										full-stack apps with key languages
+										incorporating algorithms, data
+										structures, design patterns, and APIs.
+										Put in around 60 hours on campus per
+										week plus homework. Curriculum consisted
+										of Ruby, Rails, SQL, Git, JavaScript,
+										and React.
 									</div>
 								</section>
-
-								<section class="mb-6">
-									<div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-										Built with:
-									</div>
-									<div class="lg:inline-block lg:w-8/12 w-full">
-										<span class="rounded-xl bg-gray-300 px-3">
-											Next.js
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											CSS
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											styled-jsx
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											DynamoDB
-										</span>
-										<span class="rounded-xl bg-gray-300 px-3">
-											Vercel
-										</span>
-									</div>
-								</section>
-							</div>
-						</div>
-						<hr class="mt-8 mb-12" />
-						<div id="projects" class="prose">
-							<h2 class="section-headline">Expand my skills</h2>
-							<div class="mb-16">
-								<h4 id="expand-knowledge-headline">
-									I'd like to expand my skills and knowledge
-									in several fields
-								</h4>
-								<ul>
-									<li>TypeScript</li>
-									<li>
-										Testing, e.g. with Mocha, Chai, Jest
-									</li>
-									<li>
-										Web Components, e.g. with StencilJS,
-										LitElement
-									</li>
-									<li>
-										Prototyping and Wireframing, e.g. with
-										Figma, Adobe XD
-									</li>
-									<li>Scalable Vector Graphics</li>
-									<li>Databases</li>
-									<li>Mobile development</li>
-									<li>
-										Backend development, e.g. learn
-										additional language like Go, Python,
-										PHP, Ruby, Java, Rust
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>
 				</main>
 			</div>
-		</body>
+		</main>
 	);
 }
