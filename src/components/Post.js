@@ -25,7 +25,7 @@ export default function Post() {
 	});
 
 	return (
-		<main className="p-12">
+		<main className="w-full h-screen p-12">
 			<section className="container mx-auto">
 				<h1 className="text-6xl flex justify-center font-extralight text-white">
 					BLOGS

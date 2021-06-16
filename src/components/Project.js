@@ -22,7 +22,7 @@ export default function Project() {
 	});
 
 	return (
-		<main>
+		<main className="w-full h-screen">
 			<section className="container mx-auto p-12">
 				<h1 className="text-6xl flex justify-center font-extralight text-white">
 					PROJECTS

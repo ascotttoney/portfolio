@@ -25,10 +25,15 @@ export default function About() {
 			.catch(console.error);
 	}, []);
 
-	if (!author) return <div>Loading...</div>;
+	if (!author)
+		return (
+			<div className="w-full h-screen text-green-100 text-3xl p-10">
+				Loading...
+			</div>
+		);
 
 	return (
-		<main>
+		<main className="w-full h-screen">
 			<div className="p-10 lg:pt-48 container mx-auto relative">
 				<section className="bg-green-100 bg-opacity-50 rounded-lg shadow-2xl lg:flex p-20">
 					<img
