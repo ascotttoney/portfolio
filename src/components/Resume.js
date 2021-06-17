@@ -291,10 +291,33 @@ export default function Resume() {
 										full-stack apps with key languages
 										incorporating algorithms, data
 										structures, design patterns, and APIs.
-										Put in around 60 hours on campus per
-										week plus homework. Curriculum consisted
-										of Ruby, Rails, SQL, Git, JavaScript,
-										and React.
+										Averaged 60 hours on campus per week
+										plus homework.
+										<br />
+										<br />
+										During my time at Flatiron School, I
+										learned computer science concepts and
+										coded daily throughout a fifteen-week
+										intensive bootcamp. I worked on four
+										team applications and completed a final
+										project independently. I grew
+										significantly between each team project
+										and utilized different programming
+										languages and skills to complete each
+										one. I also used GitHub during these
+										projects and grew in my understanding of
+										how to resolve merge conflicts.
+										<br />
+										<br />
+										On my final project, I worked
+										independently to build out a web
+										application with a Ruby on Rails backend
+										and React-Redux frontend. I utilized an
+										external API from Spotify to pull in
+										artist, album, and song data that
+										allowed users to catalog and listen to
+										their music collection. I set up a
+										PostgreSQL database to persist data.
 									</div>
 								</section>
 							</div>
